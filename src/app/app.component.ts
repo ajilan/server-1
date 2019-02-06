@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'server-g';
+  serverElements = [];
+  serverName = '';
+  serverContent = '';
+
+  onAddServer(){
+    this.serverElements.push({
+      type: 'server',
+      name: this.serverName,
+      content : this.serverContent
+    })
+  }
+  onAddBlueprint(){
+    this.serverElements.push({
+      type: 'blueprint',
+      name:this.serverName,
+      content: this.serverContent
+    })
+  }
 }
