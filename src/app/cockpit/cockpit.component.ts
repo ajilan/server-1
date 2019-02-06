@@ -6,10 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cockpit.component.css']
 })
 export class CockpitComponent implements OnInit {
-
+  serverName = '';
+  serverContent = '';
   constructor() { }
 
   ngOnInit() {
   }
 
+  onAddServer(){
+    // this.serverElements.push({
+    //   type: 'server',
+    //   name: this.serverName,
+    //   content : this.serverContent
+    // })
+  }
+  onAddBlueprint(){
+    // this.serverElements.push({
+    //   type: 'blueprint',
+    //   name:this.serverName,
+    //   content: this.serverContent
+    // })
+  }
 }
+
